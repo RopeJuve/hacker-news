@@ -5,8 +5,15 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
-  },
-  plugins: [],
+    extend: {
+      gridTemplateColumns: {
+        'news': '1fr 30%', // Custom grid template
+      },
+      gridTemplateRows: {
+        'custom': 'repeat(10, 150px)', // Define custom row heights
+      }
+    },
+    plugins: [],
+  }
 }
 
