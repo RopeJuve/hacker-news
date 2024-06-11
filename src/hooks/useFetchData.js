@@ -11,7 +11,7 @@ export const useFetchData = () => {
     useEffect(() => {
         const getNews = async () => {
             try {
-                const response = await fetch("http://hn.algolia.com/api/v1/search_by_date?query=");
+                const response = await fetch("https://hn.algolia.com/api/v1/search_by_date?query=");
                 if (!response.ok) {
                     throw new Error("HTTP Error! status: " + response.status);
                 }
@@ -31,7 +31,7 @@ export const useFetchData = () => {
         if (search !== '') {
             const getSearchedNews = async () => {
                 try {
-                    const response = await fetch(`http://hn.algolia.com/api/v1/search?query=${search}`);
+                    const response = await fetch(`https://hn.algolia.com/api/v1/search?query=${search}`);
                     if (!response.ok) {
                         throw new Error("HTTP Error! status: " + response.status);
                     }
@@ -53,7 +53,7 @@ export const useFetchData = () => {
     useEffect(() => {
         const getNews = async () => {
             try {
-                const response = await fetch(`http://hn.algolia.com/api/v1/search_by_date?query=&page=${page}`);
+                const response = await fetch(`https://hn.algolia.com/api/v1/search_by_date?query=&page=${page}`);
                 if (!response.ok) {
                     throw new Error("HTTP Error! status: " + response.status);
                 }
