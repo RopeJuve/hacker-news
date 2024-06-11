@@ -13,7 +13,7 @@ const NavBar = ({ tag, setTag, search, setSearch }) => {
                     <button className=' font-semibold px-5 py-1 cursor-pointer border border-black bg-black text-white hover:text-black hover:bg-transparent transition-all duration-300 ease-in-out'>Log In</button>
                 </div>
             </div>
-            <div className='flex gap-6 mt-4 items-center'>
+            <div className='hidden md:flex md:gap-6 md:mt-4 md:items-center'>
                 { /* Tags */
 
                     ['new', 'comments', 'ask', 'show', 'jobs', 'submit'].map((name) => (

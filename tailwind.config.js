@@ -10,7 +10,7 @@ export default {
         'news': '1fr 30%', // Custom grid template
       },
       gridTemplateRows: {
-        'custom': 'repeat(10, 150px)', // Define custom row heights
+        'custom': 'repeat(10, 130px)', // Define custom row heights
       }
     },
     plugins: [],

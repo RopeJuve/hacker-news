@@ -31,7 +31,7 @@ const TopNews = () => {
     }, [])
 
     return (
-        <div className="border-l-[2px] border-black pl-[1.5rem]">
+        <div className="border-none md:border-solid  md:border-l-[2px]  md:border-black pl-[1.5rem]">
             <h2 className="text-5xl font-bold mb-[2.5rem]">All Time Best </h2>
             {topStory.map((story) => (
                 <div key={story.id} className="flex flex-col gap-2 mb-[2rem]">
